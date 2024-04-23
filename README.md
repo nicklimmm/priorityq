@@ -3,7 +3,7 @@
 [![Package Version](https://img.shields.io/hexpm/v/priorityq)](https://hex.pm/packages/priorityq)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/priorityq/)
 
-A priority queue implementation based on max pairing heaps. Written in pure Gleam.
+A priority queue implementation based on max [pairing heaps](https://www.cs.cmu.edu/~sleator/papers/pairing-heaps.pdf). Written in pure Gleam.
 
 ## Installation
 
