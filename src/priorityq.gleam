@@ -68,8 +68,8 @@ fn one(val: t, cmp: Cmp(t)) -> PriorityQueue(t) {
 /// ```gleam
 /// import gleam/int
 ///
-/// new(int.compare) |> is_empty() // -> True
-/// from_list([0], int.compare) |> is_empty() // -> False
+/// new(int.compare) |> is_empty // -> True
+/// from_list([0], int.compare) |> is_empty // -> False
 /// ```
 ///
 pub fn is_empty(pq: PriorityQueue(t)) -> Bool {
@@ -85,7 +85,7 @@ pub fn is_empty(pq: PriorityQueue(t)) -> Bool {
 /// ```gleam
 /// import gleam/int
 ///
-/// from_list([1, 2, 3], int.compare) |> size() // -> 3
+/// from_list([1, 2, 3], int.compare) |> size // -> 3
 /// ```
 ///
 pub fn size(pq: PriorityQueue(t)) -> Int {
@@ -102,8 +102,8 @@ pub fn size(pq: PriorityQueue(t)) -> Int {
 /// ```gleam
 /// import gleam/int
 ///
-/// new(int.compare) |> peek() // -> None
-/// from_list([1, 10, 5], int.compare) |> peek() // -> 10
+/// new(int.compare) |> peek // -> None
+/// from_list([1, 10, 5], int.compare) |> peek // -> 10
 /// ```
 ///
 pub fn peek(pq: PriorityQueue(t)) -> Option(t) {
@@ -172,7 +172,7 @@ pub fn push(pq: PriorityQueue(t), val: t) -> PriorityQueue(t) {
 /// ```gleam
 /// import gleam/int
 ///
-/// from_list([0]) |> pop() // -> PriorityQueue(Int)
+/// from_list([0], int.compare) |> pop // -> PriorityQueue(Int)
 /// ```
 ///
 pub fn pop(pq: PriorityQueue(t)) -> PriorityQueue(t) {
