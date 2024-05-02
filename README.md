@@ -20,11 +20,11 @@ import gleam/int
 import priorityq
 
 pub fn main() {
-  new(int.compare) |> priorityq.is_empty() // -> True
+  new(int.compare) |> priorityq.is_empty // -> True
 
   let pq = priorityq.from_list([1, 5], int.compare)
-  pq |> priorityq.push(10) |> priorityq.peek() // -> 10
-  pq |> priorityq.pop() |> priorityq.size() // -> 1
+  pq |> priorityq.push(10) |> priorityq.peek // -> 10
+  pq |> priorityq.pop |> priorityq.size // -> 1
 }
 ```
 
